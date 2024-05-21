@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class sendmessagefromexcel {
 	public static void main(String[] args) throws InterruptedException, IOException {
-	System.out.println("Browser lanch successful");
+	System.out.println("Browser launch successful");
 	System.setProperty("webdriver.gecko.driver","C:\\geckodriver.exe");	
 	WebDriver driver = new FirefoxDriver();
 	driver.get("https://happy-place.ispgnet.com/"); 
