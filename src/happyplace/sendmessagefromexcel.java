@@ -34,10 +34,9 @@ public class sendmessagefromexcel {
 	 XSSFRow currow=sheet.getRow(i);
 	 String message=currow.getCell(0).getStringCellValue();
 	 String reply=currow.getCell(1).getStringCellValue();
-	 System.out.println(message);  
+	 System.out.println(message);
 	 System.out.println(reply);
-	        
-			driver.findElement(By.xpath("//*[@id=\"username\"]")).clear();
+	        driver.findElement(By.xpath("//*[@id=\"username\"]")).clear();
 			driver.findElement(By.xpath("//*[@id=\"username\"]")).sendKeys("tomc@mailinator.com");
 			driver.findElement(By.xpath("//*[@id=\"password\"]")).clear();
 			driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("Amjath@123");
@@ -55,7 +54,7 @@ public class sendmessagefromexcel {
 			driver.findElement(By.className("send")).click();
 			Thread.sleep(4000);
 			driver.findElement(By.xpath("//*[@id=\"logout\"]")).click();
-		    Thread.sleep(10000);
+		    Thread.sleep(10000);
 				driver.findElement(By.xpath("//*[@id=\"username\"]")).clear();
 				driver.findElement(By.xpath("//*[@id=\"username\"]")).sendKeys("samc@mailinator.com");
 				driver.findElement(By.xpath("//*[@id=\"password\"]")).clear();
